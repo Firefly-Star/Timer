@@ -52,12 +52,12 @@ class ScopedTimer
 public:
 	ScopedTimer()
 	{
-		measure.start();
+		timer.start();
 	}
 	~ScopedTimer()
 	{
-		measure.end();
-		measure.print();
+		timer.end();
+		timer.print();
 	}
 private:
 	Timer timer;
