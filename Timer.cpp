@@ -1,3 +1,4 @@
+#include <iostream>
 #include <chrono>
 #include <stdexcept>
 
@@ -32,7 +33,7 @@ public:
 	void print() const 
 	{
 		auto duration_ms = duration_cast<chrono::milliseconds>(total_duration);
-		cout << "Total time: " << duration_ms.count() << "ms" << endl;
+		std::cout << "Total time: " << duration_ms.count() << "ms" << endl;
 	}
 
 	void reset() 
